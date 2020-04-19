@@ -1,0 +1,3 @@
+rootProject.name='MultiplatformApp'
+include ':app'
+include ':SharedCode'

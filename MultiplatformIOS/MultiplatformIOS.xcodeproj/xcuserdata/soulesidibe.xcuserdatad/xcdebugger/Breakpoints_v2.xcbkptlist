@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A32A38C8-1B0C-400E-B4E9-65CA36EA5329"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74D67DBB-121C-48A1-AFA2-17C428B2651C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultiplatformIOS/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "74D67DBB-121C-48A1-AFA2-17C428B2651C - 8160845ece5903ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultiplatformIOS.AppDelegate.__deallocating_deinit"
+                  moduleName = "MultiplatformIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soulesidibe/AndroidStudioProjects/MultiplatformApp/MultiplatformIOS/MultiplatformIOS/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "74D67DBB-121C-48A1-AFA2-17C428B2651C - 8b1f500fc6b702fb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultiplatformIOS.AppDelegate.__allocating_init() -&gt; MultiplatformIOS.AppDelegate"
+                  moduleName = "MultiplatformIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soulesidibe/AndroidStudioProjects/MultiplatformApp/MultiplatformIOS/MultiplatformIOS/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "74D67DBB-121C-48A1-AFA2-17C428B2651C - ab8a73ecc7ccbe0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultiplatformIOS.AppDelegate.init() -&gt; MultiplatformIOS.AppDelegate"
+                  moduleName = "MultiplatformIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soulesidibe/AndroidStudioProjects/MultiplatformApp/MultiplatformIOS/MultiplatformIOS/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "93">
+               </Location>
+               <Location
+                  uuid = "74D67DBB-121C-48A1-AFA2-17C428B2651C - 1d675a91e0b94231"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "MultiplatformIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soulesidibe/AndroidStudioProjects/MultiplatformApp/MultiplatformIOS/MultiplatformIOS/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
