@@ -2,6 +2,9 @@ package com.soulesidibe.multiplaform
 
 import io.ktor.client.HttpClient
 import io.ktor.client.request.get
+import io.ktor.client.response.HttpResponse
+import io.ktor.client.response.readText
+import io.ktor.http.HttpStatusCode
 
 /**
  * Created by soulesidibe on 4/18/20 at 19:22
@@ -9,13 +12,18 @@ import io.ktor.client.request.get
  */
 
 internal interface NumberTriviaClient {
-    suspend fun getRandomNumber() : String
+    suspend fun getRandomNumber(): String
 }
 
-class NumberTriviaClientImpl(private val httpclient: HttpClient): NumberTriviaClient {
+class NumberTriviaClientImpl(private val httpclient: HttpClient) : NumberTriviaClient {
     override suspend fun getRandomNumber(): String {
         val url = "http://numbersapi.com/random"
-        return httpclient.get(url)
+        val response = httpclient.get<HttpResponse>(url)
+        return if (response.status == HttpStatusCode.OK) {
+            response.readText()
+        } else {
+            ""
+        }
     }
 
 }

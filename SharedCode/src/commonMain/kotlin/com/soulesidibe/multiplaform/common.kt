@@ -14,13 +14,17 @@ import kotlinx.coroutines.withContext
 internal expect val applicationDispatcherMain: CoroutineDispatcher
 internal expect val applicationDispatcher: CoroutineDispatcher
 
-fun getRandomNumber(response: (String) -> Unit) {
+fun getRandomNumber(response: (String) -> Unit, error: (String, Int) -> Unit) {
     val client = NumberTriviaClientImpl(HttpClient())
 
     GlobalScope.launch(applicationDispatcherMain) {
-        val text = withContext(applicationDispatcher) {
-            client.getRandomNumber()
+        try {
+            val text = withContext(applicationDispatcher) {
+                client.getRandomNumber()
+            }
+            response.invoke(text)
+        } catch (e: Exception) {
+            error.invoke("Cannot get a number", 400)
         }
-        response.invoke(text)
     }
 }

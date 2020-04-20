@@ -18,9 +18,18 @@ struct ContentView: View {
         }
     }
     func getRandomNumer() {
-        CommonKt.getRandomNumber(response: { (text: String) in
-            self.text = text
-        })
+        let status = Reach().connectionStatus()
+        
+        switch status {
+        case .online(.wiFi), .online(.wwan):
+             CommonKt.getRandomNumber(response: { (text: String) in
+                       self.text = text
+             }, error: { (message: String, code: KotlinInt) in
+                
+             })
+        default:
+            print("Not connected")
+}
     }
 }
 
@@ -29,3 +38,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+

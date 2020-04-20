@@ -162,7 +162,7 @@ __attribute__((swift_name("NumberTriviaClientImpl")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CommonKt")))
 @interface SharedCodeCommonKt : KotlinBase
-+ (void)getRandomNumberResponse:(void (^)(NSString *))response __attribute__((swift_name("getRandomNumber(response:)")));
++ (void)getRandomNumberResponse:(void (^)(NSString *))response error:(void (^)(NSString *, SharedCodeInt *))error __attribute__((swift_name("getRandomNumber(response:error:)")));
 @end;
 
 __attribute__((swift_name("Kotlinx_coroutines_coreCoroutineScope")))
