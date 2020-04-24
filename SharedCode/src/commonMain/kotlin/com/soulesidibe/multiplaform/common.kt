@@ -11,8 +11,8 @@ import kotlinx.coroutines.withContext
  * Project name : MultiplatformApp
  */
 
-internal expect val applicationDispatcherMain: CoroutineDispatcher
-internal expect val applicationDispatcher: CoroutineDispatcher
+expect val applicationDispatcherMain: CoroutineDispatcher
+expect val applicationDispatcher: CoroutineDispatcher
 
 fun getRandomNumber(response: (String) -> Unit, error: (String, Int) -> Unit) {
     val client = NumberTriviaClientImpl(HttpClient())
